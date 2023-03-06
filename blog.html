@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>1) What is DOM and what is the purpose of DOM?</h1>
+    <p>Ans : The Document Object Model, or DOM, is a programming interface for web documents. It represents the page so
+        that programs can change the document structure, style, and content. The DOM represents the document as nodes
+        and objects, allowing programming languages like JavaScript to access and manipulate the document's content,
+        structure, and style.
+
+        The purpose of the DOM is to provide a platform- and language-neutral way that allows programs and scripts to
+        dynamically access and update the content, structure, and style of web documents. This means that a web page can
+        be modified and updated dynamically without the need to reload the page. For example, using the DOM, JavaScript
+        can dynamically change the text and images on a web page, create new HTML elements, and respond to user events
+        such as clicks and form submissions.</p>
+
+    <h1>২) How will you select HTML elements using DOM? Name the DOM methods</h1>
+
+    <p>Answer : To select HTML elements using the DOM, you can use various methods to locate and access elements based
+        on their properties, attributes, or position within the document. Here are some common methods to select HTML
+        elements using the DOM:
+
+        getElementById(): This method selects an element by its unique id attribute value.
+
+        Example:
+
+        javascript
+
+        var elem = document.getElementById("myElement");
+
+        getElementsByClassName(): This method selects elements by their class attribute value.
+
+        Example:
+
+        javascript
+
+        var elems = document.getElementsByClassName("myClass");
+
+        getElementsByTagName(): This method selects elements by their tag name.
+
+        Example:
+
+        var elems = document.getElementsByTagName("p");
+
+        querySelector(): This method selects the first element that matches a given CSS selector.
+
+        Example:
+
+
+
+        var elem = document.querySelector("#myElement .myClass");
+
+        querySelectorAll(): This method selects all elements that match a given CSS selector.
+
+        Example:
+
+        var elems = document.querySelectorAll(".myClass");
+
+        These are just a few examples of the many methods available in the DOM for selecting and accessing HTML
+        elements. By using these methods, you can write JavaScript code to dynamically modify the content, style, and
+        structure of web pages.</p>
+
+    <h1>৩) What is event bubble?</h1>
+
+    <p>Event bubbling is a phenomenon in the Document Object Model (DOM) where an event that is triggered on a child
+        element "bubbles up" through its parent and ancestor elements until it reaches the document object.
+
+        When an event is triggered on a child element, such as a click event on a button, the event is first handled by
+        the child element. After the child element has finished handling the event, the event is then passed on to the
+        parent element, which can also handle the event. If the parent element has an event listener for the event, it
+        will be executed, and the event will continue to bubble up to the next ancestor element in the DOM tree until it
+        reaches the top-level document object.</p>
+
+    <h1>৪) What is a callback function and why will you use it?</h1>
+    <p>In JavaScript, a callback function is a function that is passed as an argument to another function and is
+        executed after some operation or event has been completed. The function that receives the callback function as
+        an argument is responsible for calling the callback function after it has finished its task.
+
+        The primary use case for a callback function is to perform some action or handle a result after an asynchronous
+        operation has completed, such as making an AJAX request or waiting for a user input. Since JavaScript is a
+        single-threaded language, using callbacks allows for non-blocking code execution, where the program can continue
+        to execute other code while waiting for the asynchronous operation to complete.
+
+        Using a callback function can also help to write more modular and reusable code. By separating the code that
+        initiates an operation from the code that handles its result, you can create functions that can be reused in
+        different contexts and with different callback functions. This can make your code more flexible and easier to
+        maintain.</p>
+
+</body>
+
+</html>
